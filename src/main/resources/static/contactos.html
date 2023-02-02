@@ -12,12 +12,36 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <body>
         get put delet
         <div>
-            <<h1>Crear contacto</h1>
+            <h1>Crear contacto</h1>
             <form action="#" method="POST">
                 <label>Nombre</label>
                 <input placeholder="Ingrese su nombre aqui" type="text" name="nombre" size="25"/>
                 <br>
-                <input type="email" >
+                
+                <label>Correo</label>
+                <input type="email" name="correo" placeholder="correo@fidelitas.com"/>
+                <br>
+                
+                <label>Password</label>
+                <input placeholder="Ingrese su contraseña aqui" type="password"/>
+                <br>
+                
+                <label>Seleccione si es mayor de edad:</label>
+                <input type="checkbox"/>
+                <br>
+                
+                <label>Tiene grado de escolaridad superior?</label>
+                <input type="hidden"/>
+                <br>
+                    
+                <label>Ingrese su fecha de nacimiento:</label>
+                <input type="date" />
+                <br>
+                
+                <input type="reset" />
+                <br>
+                <input type="submit" />
+
             </form>
         </div>
     </body>

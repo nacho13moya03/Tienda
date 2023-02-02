@@ -1,0 +1,13 @@
+h1,h2,h3{
+    color:white;
+    background-color:red;
+}
+
+p{
+    color: blue;
+    background-color:brown;
+}
+
+ul li#objetolista {
+    font-style:italic;
+}

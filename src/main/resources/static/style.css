@@ -1,0 +1,17 @@
+p{
+    color: blue;
+}
+
+h1,h2,h3{
+    color:maroon;
+    background-color: brown;
+    margin-left: -2in;
+}
+
+ul li#objetolista {
+    font-style: italic;
+}
+
+.zapato{
+    color:red;
+}
