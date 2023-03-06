@@ -1,2 +1,6 @@
-C:\Users\nacho\OneDrive - Universidad Fidélitas\Fidelitas\IV Cuatrimestre\Diseno de Aplicaciones Web\Semana 4\Tienda\src\main\java\com\Tienda\controller\ClienteController.java
-C:\Users\nacho\OneDrive - Universidad Fidélitas\Fidelitas\IV Cuatrimestre\Diseno de Aplicaciones Web\Semana 4\Tienda\src\main\java\com\Tienda\demo\TiendaApplication.java
+/Users/mbp_jay/NetBeansProjects/tienda_k-master/src/main/java/com/tienda_k/domain/Cliente.java
+/Users/mbp_jay/NetBeansProjects/tienda_k-master/src/main/java/com/tienda_k/service/impl/ClienteServiceImpl.java
+/Users/mbp_jay/NetBeansProjects/tienda_k-master/src/main/java/com/tienda_k/dao/ClienteDao.java
+/Users/mbp_jay/NetBeansProjects/tienda_k-master/src/main/java/com/tienda_k/TiendaApplication.java
+/Users/mbp_jay/NetBeansProjects/tienda_k-master/src/main/java/com/tienda_k/controller/ClienteController.java
+/Users/mbp_jay/NetBeansProjects/tienda_k-master/src/main/java/com/tienda_k/service/ClienteService.java
