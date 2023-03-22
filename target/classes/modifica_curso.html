@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="">
+    <head>
+        <title>Examen Parcial I</title>
+        <link rel="shortcut icon" href="shortcut.ico" />
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <header th:replace="layout/plantilla :: header"/>
+        
+        <h2>Datos de los Alumnos</h2>
+        <hr>
+        <a th:href="@{/}">Regresar</a>
+        <hr>
+        <form th:action="@{/curso/guardar}"
+              method="post"
+              th:object="${curso}">
+            <input type="hidden" name="id_alumno" 
+                   th:field="*{id_alumno}"/>
+            
+            <label>Cedula</label>
+            <input type="text" 
+                   name="cedula"
+                   required="true"
+                   th:field="*{cedula}"/>
+            <br>
+            
+            <label>Nombre</label>
+            <input type="text" 
+                   name="nombre"
+                   required="true"
+                   th:field="*{nombre}"/>
+            <br>
+            
+            <label>Apellidos</label>
+            <input type="terxt" 
+                   name="apellido"
+                   required="true"
+                   th:field="*{apellido}"/>
+            <br>
+            
+            <label>Correo</label>
+            <input type="mail" 
+                   name="correo"
+                   required="true"
+                   th:field="*{correo}"/>
+            <br>
+            
+            <label>Teléfono</label>
+            <input type="tel" 
+                   name="telefono"
+                   th:field="*{telefono}"/>
+            <br>
+            <hr>
+            <input type="submit" value="Guardar" />
+            <hr>            
+        </form>
+        
+        <footer th:replace="layout/plantilla :: footer"/>
+    </body>
+</html>
