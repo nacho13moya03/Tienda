@@ -1,6 +1,6 @@
-com/tienda_k/service/impl/ClienteServiceImpl.class
-com/tienda_k/service/ClienteService.class
-com/tienda_k/controller/ClienteController.class
-com/tienda_k/dao/ClienteDao.class
-com/tienda_k/domain/Cliente.class
-com/tienda_k/TiendaApplication.class
+com\examen\controller\CursoController.class
+com\examen\dao\CursoDao.class
+com\examen\service\CursoService.class
+com\examen\service\impl\CursoServiceImpl.class
+com\examen\domain\Curso.class
+com\examen\ExamenPracticoApplication.class

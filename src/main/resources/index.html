@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="/src/main/resources/CSS/estilos.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <title>Examen Parcial I</title>
+    <link rel="shortcut icon" href="shortcut.ico" />
+</head>
+
+<body>
+    <header th:replace="layout/plantilla :: header" />
+    <h2>Listado de Alumnos</h2>
+    <hr>
+    <div th:if="${curso != null and !curso.empty}">
+        <table border="0">
+            <thead>
+                <tr>
+                    <th>Cedula</th>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Teléfono</th>
+                    <th>Correo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="curso: ${cusro}">
+                    <td>[[${curso.cedula}]]</td>
+                    <td>[[${curso.nombre}]]</td>
+                    <td>[[${curso.apellido}]]</td>
+                    <td>[[${curso.telefono}]]</td>
+                    <td>[[${curso.correo}]]</td>
+                    <td>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <a th:href="@{/curso/nuevo}">Agregar nuevo alumno</a>
+        <br>
+        <br>
+        <div>
+            <a th:href="@{/curso/eliminar/} + ${curso.id_alumno}">Eliminar Alumno</a>
+            <a th:href="@{/curso/modificar/} + ${curso.id_alumno}">Modificar Alumno</a>
+        </div>
+    </div>
+
+    <div th:if="${curso == null or curso.empty}">
+        <h2>No se encuntran alumnos registrados de momento</h2>
+    </div>
+
+    <footer th:replace="layout/plantilla :: footer" />
+</body>
+
+</html>
